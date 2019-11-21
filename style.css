@@ -1,0 +1,43 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url("./images/email-pattern.png");
+}
+
+.header {
+    margin-top: 20px;
+    font-size: 60px;
+    background-color: rgb(230, 230, 230);
+}
+
+.intro {
+    font-style: italic;
+    background-color: rgb(230, 230, 230);
+
+}
+
+.scheduleContent {
+    background-color: white;
+    border: 5px ridge lightgrey;
+}
+
+#number, #input, #saveBtn {
+    margin-top: 10px;
+    /* display: inline; */
+    padding: 0px;
+    
+}
+#inputText {
+    width: 100%;
+}
+
+#input {
+    border: 2px dashed grey;
+}
+
+.timeRow {
+    /* border-bottom: 3px solid black; */
+}
