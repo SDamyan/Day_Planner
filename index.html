@@ -35,15 +35,17 @@
         <div class = "row">
             <div class = "col-lg-10 col-sm-10 mx-auto">
                 <div class = "scheduleContent">
+            <!-- added in individual time rows and slots for easier dynamic manipulation in js -->  
                  <div id="timerow1">
-                    <!-- added in individual time slots for easier dynamic manipulation in js -->
-                    <div class ="col-lg-2">
+                    <div class ="row">
+                    
+                    <div class ="col-lg-3">
                     <div id = "timeslot1">
                         <p>9:00 - 10:00</p>
                     </div>
                     </div>
 
-                    <div class ="col-lg-9">     
+                    <div class ="col-lg-8">     
                     <div id = "input">
                       <form action="#" target="_self">
                         <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -54,17 +56,19 @@
                         <input type="submit" value="Save"  id = "saveBtn">
                         </form>
                     </div>
-                                
+                   </div>             
                 </div>
 
+                    
                    <div id="timerow2">
-                        <div class ="col-lg-2">
+                       <div class ="row">
+                        <div class ="col-lg-3">
                         <div id = "timeslot2">
                             <p>10:00 - 11:00</p>
                         </div>
                         </div>
     
-                        <div class ="col-lg-9">     
+                        <div class ="col-lg-8">     
                         <div id = "input">
                           <form action="#" target="_self">
                             <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -75,17 +79,18 @@
                             <input type="submit" value="Save"  id = "saveBtn">
                             </form>
                         </div>
-                                    
+                        </div>            
                     </div>
     
                         <div id="timerow3">
-                            <div class ="col-lg-2">
+                            <div class ="row">
+                            <div class ="col-lg-3">
                             <div id = "timeslot3">
                                 <p>11:00 - 12:00</p>
                             </div>
                             </div>
         
-                            <div class ="col-lg-9">     
+                            <div class ="col-lg-8">     
                             <div id = "input">
                               <form action="#" target="_self">
                                 <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -97,17 +102,18 @@
                                 <input type="submit" value="Save"  id = "saveBtn">
                                 </form>
                             </div>
-                                        
+                           </div>             
                         </div>
                     
                         <div id="timerow4">
-                                <div class ="col-lg-2">
+                            <div class ="row">
+                                <div class ="col-lg-3">
                                 <div id = "timeslot4">
                                     <p>12:00 - 1:00</p>
                                 </div>
                                 </div>
             
-                                <div class ="col-lg-9">     
+                                <div class ="col-lg-8">     
                                 <div id = "input">
                                   <form action="#" target="_self">
                                     <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -119,18 +125,19 @@
                                     <input type="submit" value="Save"  id = "saveBtn">
                                     </form>
                                 </div>
-                                            
+                              </div>              
                             </div>
 
                             
                     <div id="timerow5">
-                            <div class ="col-lg-2">
+                        <div class ="row">
+                            <div class ="col-lg-3">
                             <div id = "timeslot5">
                                 <p>1:00 - 2:00</p>
                             </div>
                             </div>
 
-                            <div class ="col-lg-9">     
+                            <div class ="col-lg-8">     
                             <div id = "input">
                               <form action="#" target="_self">
                                 <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -142,18 +149,19 @@
                                 <input type="submit" value="Save"  id = "saveBtn">
                                 </form>
                             </div>
-                                        
+                           </div>             
                         </div>
                     
                     
                         <div id="timerow6">
-                                <div class ="col-lg-2">
+                            <div class ="row">
+                                <div class ="col-lg-3">
                                 <div id = "timeslot6">
                                     <p>2:00 - 3:00</p>
                                 </div>
                                 </div>
             
-                                <div class ="col-lg-9">     
+                                <div class ="col-lg-8">     
                                 <div id = "input">
                                   <form action="#" target="_self">
                                     <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -165,18 +173,19 @@
                                     <input type="submit" value="Save"  id = "saveBtn">
                                     </form>
                                 </div>
-                                            
+                               </div>             
                             </div> 
                         
                         
                         <div id="timerow7">
-                            <div class ="col-lg-2">
+                            <div class ="row">
+                            <div class ="col-lg-3">
                             <div id = "timeslot7">
                                 <p>3:00 - 4:00</p>
                             </div>
                             </div>
         
-                            <div class ="col-lg-9">     
+                            <div class ="col-lg-8">     
                             <div id = "input">
                               <form action="#" target="_self">
                                 <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -188,18 +197,19 @@
                                 <input type="submit" value="Save"  id = "saveBtn">
                                 </form>
                             </div>
-                                        
+                            </div>            
                         </div>
                     
                     
                         <div id="timerow8">
-                                <div class ="col-lg-2">
+                            <div class ="row">
+                                <div class ="col-lg-3">
                                 <div id = "timeslot8">
                                     <p>4:00 - 5:00</p>
                                 </div>
                                 </div>
             
-                                <div class ="col-lg-9">     
+                                <div class ="col-lg-8">     
                                 <div id = "input">
                                   <form action="#" target="_self">
                                     <input type="text" name="input" placeholder="Enter event here" id = "inputText">
@@ -211,7 +221,7 @@
                                     <input type="submit" value="Save" id = "saveBtn">
                                     </form>
                                 </div>
-                                            
+                              </div>              
                             </div>
                 </div>
             </div>
