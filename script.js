@@ -38,16 +38,21 @@ for (var i = 0; i < timeslots.length - 1; i++) {
 
     let rowelement = document.getElementById(`timerow${index}`);
 
-    //created an if else if statement to change the background color to grey if the time marked as present is before
-    // or blue for after now
+    //created an if else statement to change the background color to grey if the time marked as before
+    // or green for after now
     if (timeslots[i].isBefore(rightnow)) {
         rowelement.style.backgroundColor = 'lightgrey';
-        console.log('element is grey');
         console.log(timeslots[i].format("MMM Do YY hh:mm:ss a"));
         console.log(rightnow.format("MMM Do YY hh:mm:ss a"));
     }
+
     else if (timeslots[i].isAfter(rightnow)) {
         rowelement.style.backgroundColor = 'lightgreen';
+    }
+    
+    //PROBLEM displaying current hour color
+    else if (timeslots[i].isSame(rightnow)) {
+        rowelement.style.backgroundColor = 'lightblue';
     }
 }
 
