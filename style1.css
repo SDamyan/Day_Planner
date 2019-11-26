@@ -22,9 +22,10 @@ body {
 .scheduleContent {
     background-color: white;
     border: 5px ridge lightgrey;
+    margin-bottom: 15px;
 }
 
-#number, #input, #saveBtn {
+#timeslot, #input, #saveBtn {
     margin-top: 10px;
     /* display: inline; */
     padding: 0px;
@@ -38,6 +39,12 @@ body {
     border: 2px dashed grey;
 }
 
-.timeRow {
-    /* border-bottom: 3px solid black; */
+#timerow {
+    display: inline;
+   
+}
+
+#todaysDate {
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
 }
