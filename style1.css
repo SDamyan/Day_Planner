@@ -11,6 +11,8 @@ body {
     margin-top: 20px;
     font-size: 60px;
     background-color: rgb(230, 230, 230);
+    box-shadow: 0 0 10px 2px;
+    text-shadow: 2px 2px 5px lightgreen;
 }
 
 .intro {
@@ -23,14 +25,17 @@ body {
     background-color: white;
     border: 5px ridge lightgrey;
     margin-bottom: 15px;
+    box-shadow: 0 0 10px 2px;
 }
 
 #timeslot, #input, #saveBtn {
-    margin-top: 10px;
-    /* display: inline; */
-    padding: 0px;
-    
+    margin: 5px 0px;
 }
+
+#timerow {
+    border-bottom: 3px solid rgb(145, 140, 140);
+}
+
 #inputText {
     width: 100%;
 }
@@ -39,9 +44,9 @@ body {
     border: 2px dashed grey;
 }
 
-#timerow {
-    display: inline;
-   
+#saveBtn {
+    background-color: lightpink;
+    border: 2px outset rgb(184, 85, 167);
 }
 
 #todaysDate {

@@ -53,9 +53,34 @@ for (var i = 0; i < timeslots.length - 1; i++) {
 
 
 //created variable, added an event listener, and created a function to save items on click to localStorage
+let inputVar = document.getElementById("input")
+let inputTextVar = document.getElementById("inputText")
+let eventVar = "";
+
 let saveButton = document.getElementById("saveBtn");
 saveButton.addEventListener ("click", saveEvent);
 
+
 function saveEvent() {
-    window.localStorage.setItem("inputText")
+
+//adding to localStorage
+    localStorage.setItem('storeObj', (eventVar));
+
+//getting from localStorage
+    var getObject = (localStorage.getItem('storeObj'));
+    var value = inputTextVar.value;
+    inputVar.innerText = (value + " " + getObject)    
+   console.log (storeObj);
 }
+
+    /*  // Store
+    localStorage.setItem("event", "inputVar");
+    // Retrieve
+    document.getElementById("inputVar").innerHTML = localStorage.getItem("event");
+
+
+    localStorage.setItem("key", "value");
+//Syntax for READING data from localStorage:
+
+var lastname = localStorage.getItem("key");
+ */
