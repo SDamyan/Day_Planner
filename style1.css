@@ -28,7 +28,7 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
-#timeslot, #input, #saveBtn {
+#timeslot, #input1, #input2, #input3, #input4, #input5, #input6, #input7, #input8, .saveBtn {
     margin: 5px 0px;
 }
 
@@ -36,15 +36,15 @@ body {
     border-bottom: 3px solid rgb(145, 140, 140);
 }
 
-#inputText {
+#inputText1, #inputText2, #inputText3, #inputText4, #inputText5, #inputText6, #inputText7, #inputText8  {
     width: 100%;
 }
 
-#input {
+#input1, #input2, #input3, #input4, #input5, #input6, #input7, #input8 {
     border: 2px dashed grey;
 }
 
-#saveBtn {
+.saveBtn {
     background-color: lightpink;
     border: 2px outset rgb(184, 85, 167);
 }

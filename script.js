@@ -5,6 +5,8 @@
 //let rightnow = moment('1:00pm', 'h:mma');
 // let date = moment().format("MMM Do YY");
 
+
+
 //creating a variable to allow the planner hours to be compared to the current time
 let rightnow = moment();
 
@@ -58,25 +60,59 @@ for (var i = 0; i < timeslots.length - 1; i++) {
 
 //created variable, added an event listener, and created a function to save items on click to localStorage
 let inputVar = document.getElementById("input")
-let inputTextVar = document.getElementById("inputText")
+
+let inputTextVar8 = document.getElementById("inputText8");
+let inputTextVar1 = document.getElementById("inputText1");
+let inputTextVar2 = document.getElementById("inputText2");
+let inputTextVar3 = document.getElementById("inputText3");
+let inputTextVar4 = document.getElementById("inputText4");
+let inputTextVar5 = document.getElementById("inputText5");
+let inputTextVar6 = document.getElementById("inputText6");
+let inputTextVar7 = document.getElementById("inputText7");
+
+let inputVar8 = document.getElementById("input8");
+let inputVar1 = document.getElementById("input1");
+let inputVar2 = document.getElementById("input2");
+let inputVar3 = document.getElementById("input3");
+let inputVar4 = document.getElementById("input4");
+let inputVar5 = document.getElementById("input5");
+let inputVar6 = document.getElementById("input6");
+let inputVar7 = document.getElementById("input7");
+
 let eventVar = "";
 
-let saveButton = document.getElementById("saveBtn");
-saveButton.addEventListener ("click", saveEvent);
+let saveButton = $(".saveBtn");
+saveButton.on ("click", saveEvent);
 
 
 function saveEvent() {
 
 //adding to localStorage
-    localStorage.setItem('storeObj', (eventVar));
+    localStorage.setItem('storeObj', (inputTextVar8));
+    localStorage.setItem('storeObj', (inputTextVar1));
+    localStorage.setItem('storeObj', (inputTextVar2));
+    localStorage.setItem('storeObj', (inputTextVar3));
+    localStorage.setItem('storeObj', (inputTextVar4));
+    localStorage.setItem('storeObj', (inputTextVar5));
+    localStorage.setItem('storeObj', (inputTextVar6));
+    localStorage.setItem('storeObj', (inputTextVar7));
 
 //getting from localStorage
     var getObject = (localStorage.getItem('storeObj'));
+
+    localStorage.getItem('storeObj' (inputVar8));
+    localStorage.getItem('storeObj' (inputVar1));
+    localStorage.getItem('storeObj' (inputVar2));
+    localStorage.getItem('storeObj' (inputVar3));
+    localStorage.getItem('storeObj' (inputVar4));
+    localStorage.getItem('storeObj' (inputVar5));
+    localStorage.getItem('storeObj' (inputVar6));
+    localStorage.getItem('storeObj' (inputVar7));
+
     var value = inputTextVar.value;
     inputVar.innerText = (value + " " + getObject)    
-   console.log (storeObj);
+   console.log (getObject);
 
-   var 
 }
 
     /*  // Store
