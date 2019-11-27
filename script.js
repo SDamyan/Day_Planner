@@ -49,13 +49,12 @@ for (var i = 0; i < timeslots.length - 1; i++) {
     else if (timeslots[i].isAfter(rightnow)) {
         rowelement.style.backgroundColor = 'lightgreen';
     }
-    
+
     //PROBLEM displaying current hour color
-    else if (timeslots[i].isSame(rightnow)) {
+    else {
         rowelement.style.backgroundColor = 'lightblue';
     }
 }
-
 
 //created variable, added an event listener, and created a function to save items on click to localStorage
 let inputVar = document.getElementById("input")
@@ -76,6 +75,8 @@ function saveEvent() {
     var value = inputTextVar.value;
     inputVar.innerText = (value + " " + getObject)    
    console.log (storeObj);
+
+   var 
 }
 
     /*  // Store
