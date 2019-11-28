@@ -1,18 +1,15 @@
-//created a new variable using moment.js's formating, and updated the innerHTML
-//to get the date to populate in the header
-
 //to test off-time
 //let rightnow = moment('1:00pm', 'h:mma');
-// let date = moment().format("MMM Do YY");
 
-
+//form.addEventListener('reload', function(e) {
+    //e.preventDefault();
 
 //creating a variable to allow the planner hours to be compared to the current time
-let rightnow = moment();
+let rightnow = moment( );
 
 //creating variables to connect the html to js
 let rightnowString = rightnow.format("MMM Do YY hh:mm:ss a");
-let element = document.getElementById("todaysDate")
+let element = document.getElementById("todaysDate");
 element.innerHTML = rightnowString; 
 
 //created timeslots in js with moment.js to populate times
@@ -85,7 +82,7 @@ let saveButton = $(".saveBtn");
 saveButton.on ("click", saveEvent);
 
 
-function saveEvent() {
+window.onload = function saveEvent() {
 
 //adding to localStorage
     localStorage.setItem('storeObj', (inputTextVar8));
@@ -114,15 +111,3 @@ function saveEvent() {
    console.log (getObject);
 
 }
-
-    /*  // Store
-    localStorage.setItem("event", "inputVar");
-    // Retrieve
-    document.getElementById("inputVar").innerHTML = localStorage.getItem("event");
-
-
-    localStorage.setItem("key", "value");
-//Syntax for READING data from localStorage:
-
-var lastname = localStorage.getItem("key");
- */
